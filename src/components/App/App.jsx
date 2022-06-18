@@ -9,7 +9,11 @@ import { useEffect, } from 'react';
 
 // Component Imports
 import CommentsPage from '../FeedbackForm/Comments.jsx';
-
+import FeelingPage from '../FeedbackForm/Feeling.jsx';
+import UnderstadingPage from '../FeedbackForm/Understanding.jsx';
+import SupportedPage from '../FeedbackForm/Supported.jsx';
+import SubmittedPage from '../FeedbackForm/Submit.jsx';
+import ReviewFeedback from '../FeedbackForm/Review.jsx';
 
 function App() {
 
@@ -46,9 +50,18 @@ function App() {
           <h4>Don't forget it!</h4>
         </header>
       </div>
+      
+      <FeelingPage />
+
+      <UnderstadingPage/>
+      
+      <SupportedPage/>
 
       <CommentsPage />
-             
+
+      <ReviewFeedback/>
+
+      <SubmittedPage/>
               
       {/* LINKS TO BE CREATED */}
       {/* 
