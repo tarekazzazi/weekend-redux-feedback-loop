@@ -45,26 +45,43 @@ function App() {
       {/* LINKS TO BE CREATED */}
       {/* 
 
-        <Route path="/" exact>
-          <Home />
-        </Route>
+        // HOME
+
+              <Route path="/" exact>
+                <Home />
+              </Route>
         
-        <Route path="/feedback-form" exact>
-          <FeedbackForm />
-          </Route>
+        // FORM
 
-        <Route path="/feedback-form-page-1" exact>
-          <FeedbackForm />
-          </Route>
+              <Route path="/feedback-form" exact>
+                <FeedbackForm />
+                </Route>
 
-        <Route path="/feedback-form-page-2" exact>
-          <FeedbackForm />
-          </Route>
+              <Route path="/feedback-form-page-1" exact>
+                <FeedbackForm />
+                </Route>
 
-        <Route path="/feedback-form-page-2" exact>
-          <FeedbackForm />
-          </Route>
+              <Route path="/feedback-form-page-2" exact>
+                <FeedbackForm />
+                </Route>
 
+              <Route path="/feedback-form-page-3" exact>
+                <FeedbackForm />
+                </Route>
+
+              <Route path="/feedback-form-page-4" exact>
+                <FeedbackForm />
+                </Route>ƒ
+
+              <Route path="/feedback-form-page-5" exact>
+                <FeedbackForm />
+                </Route>
+          
+        // REVIEW
+
+              <Route path="/review" exact>
+                <Review />
+                </Route>   
 
       */ }
     </Router>
