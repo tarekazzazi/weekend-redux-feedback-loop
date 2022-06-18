@@ -8,12 +8,12 @@ import { useDispatch } from 'react-redux';
 import { useEffect, } from 'react';
 
 // Component Imports
-import CommentsPage from '../FeedbackForm/Comments.jsx';
-import FeelingPage from '../FeedbackForm/Feeling.jsx';
-import UnderstadingPage from '../FeedbackForm/Understanding.jsx';
-import SupportedPage from '../FeedbackForm/Supported.jsx';
-import SubmittedPage from '../FeedbackForm/Submit.jsx';
-import ReviewFeedback from '../FeedbackForm/Review.jsx';
+import CommentsPage from '../Comments/Comments.jsx';
+import FeelingPage from '../Feeling/Feeling.jsx';
+import UnderstadingPage from '../Understanding/Understanding.jsx';
+import SupportedPage from '../Supported/Supported.jsx';
+import SubmittedPage from '../Submit/Submit.jsx';
+import ReviewFeedback from '../Review/Review.jsx';
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
   };
 
   return (
-          
+
     <Router>
       <div className='App'>
         <header className='App-header'>
@@ -50,61 +50,30 @@ function App() {
           <h4>Don't forget it!</h4>
         </header>
       </div>
-      
-      <FeelingPage />
+      <Route path="/" exact>
+        <FeelingPage />
+      </Route>
 
-      <UnderstadingPage/>
-      
-      <SupportedPage/>
+      <Route path="/understanding-2" exact>
+        <UnderstadingPage />
+      </Route>
 
-      <CommentsPage />
+      <Route path="/SupportedPage-3" exact>
+        <SupportedPage />
+      </Route>
 
-      <ReviewFeedback/>
+      <Route path="/CommentsPage-4" exact>
+        <CommentsPage />
+      </Route>
 
-      <SubmittedPage/>
-              
-      {/* LINKS TO BE CREATED */}
-      {/* 
+      <Route path="/ReviewPage-5" exact>
+        <ReviewFeedback />
+      </Route>
 
-        // HOME
+      <Route path="/submitted" exact>
+        <SubmittedPage />
+      </Route>
 
-              <Route path="/" exact>
-                <Home />
-              </Route>
-        
-        // FORM
-
-              <Route path="/feedback-form" exact>
-                <FeedbackForm />
-                </Route>
-
-              <Route path="/feedback-form-page-1" exact>
-                <FeedbackForm />
-                </Route>
-
-              <Route path="/feedback-form-page-2" exact>
-                <FeedbackForm />
-                </Route>
-
-              <Route path="/feedback-form-page-3" exact>
-                <FeedbackForm />
-                </Route>
-
-              <Route path="/feedback-form-page-4" exact>
-                <FeedbackForm />
-                </Route>ƒ
-
-              <Route path="/feedback-form-page-5" exact>
-                <FeedbackForm />
-                </Route>
-          
-        // REVIEW
-
-              <Route path="/review" exact>
-                <Review />
-                </Route>   
-
-      */ }
     </Router>
 
   );

@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 function CommentsPage() {
     console.log('In comments Page');
     return (
@@ -7,7 +7,13 @@ function CommentsPage() {
 
             <label htmlFor="text">Comments</label>
             <input type="text" id='textComment' />
-            {/* next button goes to review page before page 5  */}
+            {/* next button goes to review page before page 5 */}
+
+            <Link to="/ReviewPage-5">
+                <button>
+                    NEXT
+                </button>
+            </Link>
         </>
     )
 }
