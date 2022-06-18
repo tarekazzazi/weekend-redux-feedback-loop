@@ -2,9 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+// React Imports
 import { HashRouter as Router, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect, } from 'react';
+
+// Component Imports
+import FeedbackForm from '../FeedbackForm/FeedbackForm.jsx';
+
 
 function App() {
 
@@ -33,7 +38,7 @@ function App() {
   };
 
   return (
-
+          
     <Router>
       <div className='App'>
         <header className='App-header'>
@@ -42,6 +47,8 @@ function App() {
         </header>
       </div>
 
+              <FeedbackForm />
+              
       {/* LINKS TO BE CREATED */}
       {/* 
 
