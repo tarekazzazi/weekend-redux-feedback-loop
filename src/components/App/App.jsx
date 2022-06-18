@@ -8,7 +8,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect, } from 'react';
 
 // Component Imports
-import FeedbackForm from '../FeedbackForm/FeedbackForm.jsx';
+import CommentsPage from '../FeedbackForm/Comments.jsx';
 
 
 function App() {
@@ -47,7 +47,8 @@ function App() {
         </header>
       </div>
 
-              <FeedbackForm />
+      <CommentsPage />
+             
               
       {/* LINKS TO BE CREATED */}
       {/* 
