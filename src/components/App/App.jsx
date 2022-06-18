@@ -15,7 +15,7 @@ function App() {
       url: "/feedback",
     })
       .then((response) => {
-        console.log("GET", response);
+        console.log("GET", response.data);
         // dispatch goes here
       })
       .catch((err) => {
