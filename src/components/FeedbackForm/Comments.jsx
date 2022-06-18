@@ -7,7 +7,7 @@ function CommentsPage() {
 
             <label htmlFor="text">Comments</label>
             <input type="text" id='textComment' />
-            {/* next button goes to review page before page 5 */}
+            {/* next button goes to review page before page 5  */}
         </>
     )
 }
