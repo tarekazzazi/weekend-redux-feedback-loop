@@ -10,7 +10,7 @@ function SupportedPage() {
                 <h2>How well are you being supported?</h2>
 
                 <label htmlFor="number">Support?</label>
-                <input type="number" />
+                <input type="number" defaultValue={0} min={0} max={10} />
 
 
                 <button onClick={handleClick}>NEXT</button>

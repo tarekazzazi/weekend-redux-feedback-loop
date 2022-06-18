@@ -13,7 +13,7 @@ function UnderstadingPage() {
             <h2>How well are you understading the content?</h2>
 
             <label htmlFor="number">Understanding?</label>
-            <input type="number" />
+            <input type="number" defaultValue={0} min={0} max={10} />
 
             
             <button onClick={handleClick}>NEXT</button>
