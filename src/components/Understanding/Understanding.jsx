@@ -1,5 +1,13 @@
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 function UnderstadingPage() {
+    const history = useHistory();
+
+    const handleClick = () => {
+
+        history.push('/supportedPage-3');
+
+    }
+
     return (
         <>
             <h2>How well are you understading the content?</h2>
@@ -7,9 +15,9 @@ function UnderstadingPage() {
             <label htmlFor="number">Understanding?</label>
             <input type="number" />
 
-            <Link to="/SupportedPage-3">
-                <button>NEXT</button>
-            </Link>         
+            
+            <button onClick={handleClick}>NEXT</button>
+
         </>
     )
 }

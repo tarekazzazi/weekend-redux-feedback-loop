@@ -1,17 +1,23 @@
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 function SupportedPage() {
-    return (
-        <>
-            <h2>How well are you being supported?</h2>
+    const history = useHistory();
+    const handleClick = () => {
 
-            <label htmlFor="number">Support?</label>
-            <input type="number" />
+        history.push('/commentsPage-4');
+    }
+        return (
+            <>
+                <h2>How well are you being supported?</h2>
 
-            <Link to="/CommentsPage-4">
-                <button>NEXT</button>
-            </Link>    
-        </>
-    )
+                <label htmlFor="number">Support?</label>
+                <input type="number" />
+
+
+                <button onClick={handleClick}>NEXT</button>
+
+            </>
+        )
+    
 }
 
 export default SupportedPage;

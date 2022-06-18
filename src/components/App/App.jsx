@@ -15,6 +15,8 @@ import SupportedPage from '../Supported/Supported.jsx';
 import SubmittedPage from '../Submit/Submit.jsx';
 import ReviewFeedback from '../Review/Review.jsx';
 
+
+
 function App() {
 
   const dispatch = useDispatch();
@@ -50,6 +52,7 @@ function App() {
           <h4>Don't forget it!</h4>
         </header>
       </div>
+
       <Route path="/" exact>
         <FeelingPage />
       </Route>
@@ -58,15 +61,15 @@ function App() {
         <UnderstadingPage />
       </Route>
 
-      <Route path="/SupportedPage-3" exact>
+      <Route path="/supportedPage-3" exact>
         <SupportedPage />
       </Route>
 
-      <Route path="/CommentsPage-4" exact>
+      <Route path="/commentsPage-4" exact>
         <CommentsPage />
       </Route>
 
-      <Route path="/ReviewPage-5" exact>
+      <Route path="/reviewPage-5" exact>
         <ReviewFeedback />
       </Route>
 

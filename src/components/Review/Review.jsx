@@ -1,5 +1,11 @@
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 function ReviewFeedback() {
+    
+    const history = useHistory();
+    const handleClick = () => {
+
+        history.push('/submitted');
+    }
     return (
         <>
             <h2>Review Your Feedback</h2>
@@ -10,9 +16,9 @@ function ReviewFeedback() {
                 <li>Support:</li>
                 <li>Comments:</li>
             </ul>
-            <Link to="/submitted">
-                <button>SUBMIT</button>
-            </Link>
+            
+                <button onClick={handleClick}>SUBMIT</button>
+            
         </>
     );
 
