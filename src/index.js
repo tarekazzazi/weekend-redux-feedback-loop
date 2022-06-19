@@ -17,10 +17,21 @@ const feedback = (state = [], action) => {
     return state;
 }
 
+// feeling reducer
+const feelingReducer = (state = [], action) => {
+    switch (action.type) {
+        case 'SET_FEELING':
+            console.log('new payload is' , Number(action.payload));
+        return Number(action.payload)
+    }
+    return state;
+}
 // Store 
 const store = createStore(
     combineReducers({
         feedback,
+        feelingReducer,
+
     }),
     applyMiddleware(logger)
 )
