@@ -46,6 +46,16 @@ const supportReducer = (state = [], action) => {
     }
     return state;
 }
+
+// comment reducer 
+const commentReducer = (state = [], action) => {
+    switch (action.type) {
+        case 'SET_COMMENT':
+        console.log('comment is:', (action.payload));
+        return action.payload;
+    }
+    return state
+}
 // Store 
 const store = createStore(
     combineReducers({
@@ -53,6 +63,7 @@ const store = createStore(
         feelingReducer,
         understandingReducer,
         supportReducer,
+        commentReducer,
 
     }),
     applyMiddleware(logger)
