@@ -1,8 +1,12 @@
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 function ReviewFeedback() {
-    const feelingReducer = useSelector((store) => store.feelingReducer);
-    console.log('in review feedback the feeling level is',feelingReducer);
+    const feeling = useSelector((store) => store.feelingReducer);
+    const understanding = useSelector((store) => store.understandingReducer);
+    const support = useSelector((store) => store.supportReducer);
+    const comment = useSelector((store) => store.commentReducer);
+    console.log('in review answer is',feeling, understanding, support, comment);
+    
     const history = useHistory();
     const handleClick = () => {
 
