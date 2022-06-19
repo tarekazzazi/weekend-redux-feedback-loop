@@ -9,6 +9,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 // feedback reducer
+// stores feedback state in redux store
 const feedback = (state = [], action) => {
     switch (action.type) {
         case 'GET_FEEDBACK':
@@ -18,7 +19,7 @@ const feedback = (state = [], action) => {
 }
 
 // feeling reducer
-const feelingReducer = (state = [], action) => {
+const feelingReducer = (state = 0, action) => {
     switch (action.type) {
         case 'SET_FEELING':
             console.log('feeling is', Number(action.payload));
@@ -28,7 +29,7 @@ const feelingReducer = (state = [], action) => {
 }
 
 // understanding reducer
-const understandingReducer = (state = [], action) => {
+const understandingReducer = (state = 0, action) => {
     switch (action.type) {
         case 'SET_UNDERSTANDING':
             console.log('understanding is', Number(action.payload));
@@ -38,7 +39,7 @@ const understandingReducer = (state = [], action) => {
 }
 
 // support reducer
-const supportReducer = (state = [], action) => {
+const supportReducer = (state = 0, action) => {
     switch (action.type) {
         case 'SET_SUPPORT':
             console.log(' support is', Number(action.payload));
@@ -48,7 +49,7 @@ const supportReducer = (state = [], action) => {
 }
 
 // comment reducer 
-const commentReducer = (state = [], action) => {
+const commentReducer = (state = '', action) => {
     switch (action.type) {
         case 'SET_COMMENT':
         console.log('comment is:', (action.payload));

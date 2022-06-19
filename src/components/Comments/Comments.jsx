@@ -6,6 +6,7 @@ function CommentsPage() {
     console.log('In comments Page');
 
     const [comment, setComment] = useState('');
+
     const dispatch = useDispatch();
     const history = useHistory();
 
@@ -22,12 +23,12 @@ function CommentsPage() {
 
             <label htmlFor="text">Comments</label>
             <input type="text" id='textComment'
-                 onChange={e => setComment(e.target.value)}
-                 value={comment}
+                onChange={e => setComment(e.target.value)}
+                value={comment}
             />
 
-                <button onClick={handleClick}> NEXT </button>
-            
+            <button onClick={handleClick}> NEXT </button>
+
         </>
     )
 }

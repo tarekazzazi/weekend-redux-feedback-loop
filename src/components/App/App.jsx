@@ -26,6 +26,7 @@ function App() {
   }, []);
 
   const fetchFeedback = () => {
+    // gets feedback from DB
     axios({
       method: "GET",
       url: '/feedback',
@@ -33,13 +34,14 @@ function App() {
       .then((response) => {
         console.log("GET", response.data);
         // dispatch goes here
+        // sends payload to reducer
         dispatch({
           type: 'GET_FEEDBACK',
           payload: response.data,
         });
       })
       .catch((err) => {
-        console.log(`Error getting pizza list, ${err}`);
+        console.log(`Error gettig feedback, ${err}`);
       });
   };
 
