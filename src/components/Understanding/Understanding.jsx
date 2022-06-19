@@ -19,7 +19,7 @@ function UnderstadingPage() {
 
     return (
         <>
-            <h2>How well are you understading the content?</h2>
+            <h2>How well are you understanding the content?</h2>
 
             <label htmlFor="number">Understanding?</label>
             <input type="number" defaultValue={0} min={0} max={10}
