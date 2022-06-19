@@ -26,11 +26,22 @@ const feelingReducer = (state = [], action) => {
     }
     return state;
 }
+
+// understanding reducer
+    const understandingReducer = ( state = [], action) => {
+        switch (action.type) {
+            case 'SET_UNDERSTANDING':
+                console.log('payload is', Number(action.payload));
+            return Number(action.payload);
+        }
+        return state;
+    }
 // Store 
 const store = createStore(
     combineReducers({
         feedback,
         feelingReducer,
+        understandingReducer,
 
     }),
     applyMiddleware(logger)
