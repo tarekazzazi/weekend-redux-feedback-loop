@@ -27,7 +27,7 @@ function FeelingPage() {
 
                 <label htmlFor="number">Feeling?</label>
 
-                <input id="feelingLvl" type="number" min={0} max={10} defaultValue={0}
+                <input id="feelingLvl" type="number" min={0} max={10} 
                     onChange={e => setFeelingLvl(e.target.value)}
                     value={feelingLvl}
                 />

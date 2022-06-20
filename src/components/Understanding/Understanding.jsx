@@ -22,7 +22,7 @@ function UnderstadingPage() {
             <h2>How well are you understanding the content?</h2>
 
             <label htmlFor="number">Understanding?</label>
-            <input type="number" defaultValue={0} min={0} max={10}
+            <input type="number" min={0} max={10}
                 onChange={e => setUnderstanding(e.target.value)}
                 value={understanding}
             />

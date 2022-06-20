@@ -19,7 +19,7 @@ function SupportedPage() {
                 <h2>How well are you being supported?</h2>
 
                 <label htmlFor="number">Support?</label>
-                <input type="number" defaultValue={0} min={0} max={10}
+                <input type="number" min={0} max={10}
                        onChange={e => setSupport(e.target.value)}
                        value={support}
                 />
